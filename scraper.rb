@@ -10,9 +10,11 @@ def make_guide_page_list
   puts 'Making a list of all the pages to scrape...'
   i = 0
   # There were 77 pages of summaries to scrape when I wrote this
-  2.times do
+  7.times do
     i += 1
-    page = "http://www.bbc.co.uk/programmes/b006m86d/episodes/guide?page=#{i}"
+    # page = "http://www.bbc.co.uk/programmes/b006m86d/episodes/guide?page=#{i}"
+    # page = "http://www.pogdesign.co.uk/cat/My-Little-Pony-Friendship-is-Magic/Season-#{i}"
+    page = "http://www.tv.com/shows/my-little-pony-friendship-is-magic/season-#{i}/"
     @guide_pages << page
   end
 end
@@ -23,7 +25,8 @@ def scrape(page)
   doc = Nokogiri::HTML(html)
 
   # Get each episode summary
-  doc.css('.programme__synopsis span').each do |summary|
+  # doc.css('.programme__synopsis span').each do |summary|
+  doc.css('div.description').each do |summary|
     # Add the summary text to the main array
     @all_summaries << summary.text
   end
@@ -32,7 +35,7 @@ end
 # Write summaries to txt file
 def write_to_txt
   # Create unique filename based on time
-  filename = "eastenders_#{Time.now.strftime('%l%m%M%S%w%y')}.txt"
+  filename = "ponyville_#{Time.now.strftime('%l%m%M%S%w%y')}.txt"
 
   File.open("corpus/#{filename}", 'w+') do |file|
     puts "Writing to #{filename}..."

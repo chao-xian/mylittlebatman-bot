@@ -1,250 +1,75 @@
-Abi
-Adam
-Afia
-AJ
-Al
-Aleks
-Alfie
-Alice
-Allen
-Amira
-Amy
-Andrew
-Andy
-Angie
-Anthony
-Archie
-Arlene
-Arthur
-Ashley
-Aubrey
-Ava
-Ayesha
-Babe
-Barry
-Becca
-Belinda
-Ben
-Bert
-Beth
-Bex
-Bianca
-Billie
+Twilight Sparkle
+Rainbow Dash
+Rainbow
+Pinkie Pie
+Rarity
+Applejack
+Fluttershy
+Spike
+Princess Celestia
+Princess Luna
+Cutie Mark Crusaders
+Discord
+Princess Cadance
+Shining Armor
+Starlight Glimmer
+Starlight
+Cutie Mark Crusaders
+Apple Bloom
+Scootaloo
+Sweetie Belle
+Babs Seed
+Gabby
+Discord
+Big Mcintosh
+Big Mac
+Granny Smith
+Mayor Mare
+Cheerilee
+Snips and Snails
+Diamond Tiara
+Silver Spoon
+Pipsqueak
+Cranky Doodle
+Matilda
+Bulk Biceps
+Prince Blueblood
+Hoity Toity
+Photo Finish
+Sapphire Shores
+Fancy Pants
+Sassy Saddles
+The Wonderbolts
+Spitfire
+Soarin
+Boy Bullies
+Hoops
 Billy
-Bobby
-Bradley
-Brenda
-Buster
-Callum
-Carl
-Carla
-Carly
-Carmel
-Carol
-Charlie
-Chrissie
-Christian
-Cindy
-Clare
-Claudette
-Connor
-Cora
-Courtney
-Craig
-Danielle
-Danny
-Darren
-David
-Dawn
-Dean
-Deano
-Debra
-Den
-Denise
-Dennis
-Derek
-Dexter
-Diane
-Donna
-Dotty
-Duncan
-Eddie
-Edward
-Elaine
-Emma
-Ethel
-Fatboy
-Fatima
-Frank
-Freddie
-Garry
-George
-Gina
-Glenda
-Grant
-Greg
-Gus
-Harry
-Hazel
-Heather
-Honey
-Ian
-Irene
-Jack
-Jade
-Jake
-James
-Jamie
-Jane
-Janine
-Jase
-Jay
-Jean
-Jim
-Jodie
-Joe
-Joey
-Johnny
-Jordan
-Joy
-Jules
-Julie
-Kamil
-Kat
-Kathy
-Keith
-Kevin
-Kim
-Kirsty
-Kush
-Kyle
-Kylie
-Lacey
-Laura
-Lauren
-Lee
-Leon
-Les
-Lexi
-Liam
-Libby
-Lily
-Linda
-Lisa
-Liz
-Lola
-Lorraine
-Lou
-Louise
-Lucas
-Lucy
-Lydia
-Manda
-Mandy
-Margaret
-Marissa
-Mark
-Marta
-Martin
-Matthew
-Max
-May
-Mel
-Mercy
-Michael
-Michelle
-Mick
-Mickey
-Mike
-Minty
-Mo
-Morgan
-Nancy
-Naomi
-Natalie
-Nelly
-Nick
-Nikki
-Norman
-Oliver
-Ollie
-Owen
-Pam
-Pat
-Patrick
-Paul
-Pauline
-Pearl
-Pearly
-Peggy
-Petal
-Pete
-Peter
-Phil
-Poppy
-Preeti
-Qadim
-Rachel
-Rainie
-Ray
-Rebecca
-Ricky
-Ritchie
-Rob
-Ronnie
-Rose
-Rosie
-Roxy
-Roy
-Royle
-Ruby
-Ryan
-Sal
-Sam
-Saskia
-Scarlett
-Sean
-Shabnam
-Shaki
-Shakil
-Sharon
-Shenice
-Shirl
-Shirley
-SJ
-Sonia
-Stacey
-Stan
-Stella
-Steve
-Steven
-Suzy
-Syd
-Syed
-Sylvie
-Tam
-Tamwar
-Tanya
-Tariq
-Terry
-Theo
-Tiffany
-Tina
-Tomas
-Tommy
-Tony
-Tosh
-Trevor
-Trina
-Trish
-Trott
-Tyler
-Vanessa
-Vincent
-Vinnie
-Wellard
-Whitney
-Yasmin
-Yolande
-Yusef
-Zainab
+Dumb-Bell
+Nightmare Moon
+Queen Chrysalis
+King Sombra
+Lord Tirek
+Gilda
+Trixie
+Dragons
+Zecora
+Marble Pie
+Maud Pie
+Star Swirl the Bearded
+Flim Flam Brothers
+Daring Do
+Coco Pommel
+Derpy
+Muffins
+DJ Pon-3
+Vinyl Scratch
+Dr. Hooves
+Time Turner
+Lyra Heartstrings
+Bon Bon
+Sweetie Drops
+Minuette
+Twinkleshine
+Lemon Hearts
+Octavia Melody
