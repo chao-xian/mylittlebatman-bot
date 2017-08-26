@@ -10,8 +10,8 @@ class MyBot < Ebooks::Bot
   def configure
     # Consumer details come from registering an app at https://dev.twitter.com/
     # Once you have consumer details, use "ebooks auth" for new access tokens
-    self.consumer_key = ENV['SOAP_BOT_CONSUMER_KEY']
-    self.consumer_secret = ENV['SOAP_BOT_CONSUMER_SECRET']
+    self.consumer_key = ENV['MY_LITTLE_BATMAN_CONSUMER_KEY']
+    self.consumer_secret = ENV['MY_LITTLE_BATMAN_CONSUMER_SECRET']
   end
 
   def on_startup
@@ -20,8 +20,8 @@ class MyBot < Ebooks::Bot
     # Get the names of characters which can be replaced
     characters = File.foreach('characters.txt').map { |line| line.chomp }
 
-    # Get the eldritch words
-    eldritch = File.foreach('eldritch.txt').map { |line| line.split("\n") }
+    # Get the Batman words
+    batman = File.foreach('bat_characters.txt').map { |line| line.split("\n") }
 
     scheduler.every '171m' do
       # Generate a statement using the model
@@ -41,16 +41,16 @@ class MyBot < Ebooks::Bot
         words << word_bits
       end
 
-      # If there are names, at least one must be eldritchified
+      # If there are names, at least one must be Batman-ified
       if name_count > 0
-        has_eldritch = false
-        while has_eldritch == false
+        has_batman = false
+        while has_batman == false
           words.each_with_index do |word_bits, index|
-            # Replace a name with eldritch 50% of the time
+            # Replace a name with Batman 50% of the time
             next unless characters.include?(word_bits[0]) && rand > 0.5
-            word_bits[0] = eldritch.sample
-            # We got eldritch now! No need to re-run this loop
-            has_eldritch = true
+            word_bits[0] = batman.sample
+            # We got Batman now! No need to re-run this loop
+            has_batman = true
             # If this is the first word, capitalise it appropriately
             next unless index.zero?
             first_word = word_bits[0][0].to_s.split
@@ -76,7 +76,7 @@ class MyBot < Ebooks::Bot
   def load_model!
     return if @model
 
-    @model_path ||= 'model/eastenders.model'
+    @model_path ||= 'model/ponyville.model'
 
     log "Loading model #{model_path}"
     @model = Ebooks::Model.load(model_path)
@@ -84,7 +84,7 @@ class MyBot < Ebooks::Bot
 end
 
 # Make a MyBot and attach it to an account
-MyBot.new('eldritchenders') do |bot|
+MyBot.new('_mylittlebatman') do |bot|
   bot.access_token = ENV['SOAP_BOT_TOKEN']
   bot.access_token_secret = ENV['SOAP_BOT_TOKEN_SECRET']
 end
