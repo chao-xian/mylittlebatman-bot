@@ -23,26 +23,22 @@ class MyBot < Ebooks::Bot
     # Get the Batman words
     batman = File.foreach('bat_characters.txt').map { |line| line.split("\n") }
 
-    # scheduler.every '171m' do
-    scheduler.every '5m' do
-      log "Building tweet"
+    # Generate a statement using the model
+    # I kept the character count down to leave room for long Lovecraft names
+    statement = model.make_statement(100)
 
-      # Generate a statement using the model
-      # I kept the character count down to leave room for long Lovecraft names
-      statement = model.make_statement(100)
+    # Prepare to collect words and count names which are in the statement
+    words = []
+    name_count = 0
 
-      # Prepare to collect words and count names which are in the statement
-      words = []
-      name_count = 0
-
-      # Get each individual word, break it up and check for names
-      statement.split(' ').each do |word|
-        # Separate out punctuation and anything after it, like 's
-        word_bits = word.split(/(?<=\w)(?=[.,?':;])/)
-        # If it's a name, add it to the array
-        name_count += 1 if characters.include?(word_bits[0])
-        words << word_bits
-      end
+    # Get each individual word, break it up and check for names
+    statement.split(' ').each do |word|
+      # Separate out punctuation and anything after it, like 's
+      word_bits = word.split(/(?<=\w)(?=[.,?':;])/)
+      # If it's a name, add it to the array
+      name_count += 1 if characters.include?(word_bits[0])
+      words << word_bits
+    end
 
       # If there are names, at least one must be Batman-ified
       if name_count > 0
@@ -70,9 +66,12 @@ class MyBot < Ebooks::Bot
       end
       new_statement = new_words.join(' ')
 
-      log "Tweeting"
-      tweet(new_statement)
-    end
+    log "Tweeting"
+    tweet(new_statement)
+    tweet(new_statement)
+
+    # Save the dynos
+    exit
   end
 
   private
