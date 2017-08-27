@@ -23,7 +23,8 @@ class MyBot < Ebooks::Bot
     # Get the Batman words
     batman = File.foreach('bat_characters.txt').map { |line| line.split("\n") }
 
-    scheduler.every '171m' do
+    # scheduler.every '171m' do
+    scheduler.every '5m' do
       log "Building tweet"
 
       # Generate a statement using the model
