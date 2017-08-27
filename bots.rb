@@ -24,6 +24,8 @@ class MyBot < Ebooks::Bot
     batman = File.foreach('bat_characters.txt').map { |line| line.split("\n") }
 
     scheduler.every '171m' do
+      log "Building tweet"
+
       # Generate a statement using the model
       # I kept the character count down to leave room for long Lovecraft names
       statement = model.make_statement(100)
@@ -67,6 +69,7 @@ class MyBot < Ebooks::Bot
       end
       new_statement = new_words.join(' ')
 
+      log "Tweeting"
       tweet(new_statement)
     end
   end
@@ -85,6 +88,7 @@ end
 
 # Make a MyBot and attach it to an account
 MyBot.new('_mylittlebatman') do |bot|
+  log "Instantiating new bot"
   bot.access_token = ENV['SOAP_BOT_TOKEN']
   bot.access_token_secret = ENV['SOAP_BOT_TOKEN_SECRET']
 end
